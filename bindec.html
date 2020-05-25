@@ -1,0 +1,51 @@
+<html>
+    <head>
+     <title> bin - dec</title>
+     <script>
+         function plus()
+         {
+         var a = parseFloat(document.getElementById('a').value);
+         var b = parseFloat(document.getElementById('b').value);
+         var c = a+b;
+
+         var wynik = document.getElementById('pok').innerHTML = c;
+         }
+
+         function minus()
+         {
+         var a = parseFloat(document.getElementById('a').value);
+         var b = parseFloat(document.getElementById('b').value);
+         var c = a-b;
+
+         var wynik = document.getElementById('pok').innerHTML = c;
+         }
+
+         function razy()
+         {
+         var a = parseFloat(document.getElementById('a').value);
+         var b = parseFloat(document.getElementById('b').value);
+         var c = a*b;
+
+         var wynik = document.getElementById('pok').innerHTML = c;
+         }
+
+         function przez()
+         {
+         var a = parseFloat(document.getElementById('a').value);
+         var b = parseFloat(document.getElementById('b').value);
+         var c = a/b;
+
+         var wynik = document.getElementById('pok').innerHTML = c;
+         }
+     </script>
+    </head>
+    <body>
+       A: <input type="number" id="a"/> 
+       B: <input type="number" id="b"/> 
+      <button onclick="plus()" id="+">+</button>
+      <button onclick="minus()" id="-">-</button>
+    <button onclick="razy()" id="*">*</button>
+    <button onclick="przez()" id="/">/</button>
+    <div id="pok"></div>
+    </body>
+</html>
